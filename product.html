@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Mahsulot – MyShop</title>
+    <link rel="stylesheet" href="static/style.css">
+
+    <style>
+        .product-page {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .product-img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-info {
+            margin-top: 20px;
+        }
+        .product-info h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .price {
+            margin: 20px 0;
+            font-size: 26px;
+            color: #0080ff;
+        }
+        .buy-btn {
+            padding: 14px 20px;
+            background: #0080ff;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .buy-btn:hover {
+            background: #0070e0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">MyShop</h1>
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="cart.html">Savat</a>
+        </nav>
+    </header>
+
+    <div class="product-page">
+        <img src="images/product1.png" class="product-img" alt="Mahsulot rasmi">
+
+        <div class="product-info">
+            <h2>Mahsulot nomi</h2>
+
+            <p>
+                Bu yerda mahsulot haqida to‘liq tavsif bo‘ladi.
+                Xaridorni qiziqtiradigan barcha xususiyatlar yoziladi.
+            </p>
+
+            <div class="price">80 000 so‘m</div>
+
+            <button class="buy-btn" onclick="addToCart('Mahsulot nomi', 80000)">
+                Savatga qo‘shish
+            </button>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Savat - MyShop</title>
+    <link rel="stylesheet" href="static/style.css">
+
+    <style>
+        .cart-container {
+            padding: 40px;
+        }
+        .cart-item {
+            background: #fff;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+        .cart-item button {
+            background: #ff3333;
+            border: none;
+            padding: 7px 14px;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .cart-item button:hover {
+            background: #cc0000;
+        }
+        .total-box {
+            margin-top: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+        .order-btn {
+            margin-top: 20px;
+            padding: 15px;
+            background: #0080ff;
+            color: white;
+            border-radius: 8px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .order-btn:hover {
+            background: #006bd6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">MyShop</h1>
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="cart.html">Savat</a>
+        </nav>
+    </header>
+
+    <div class="cart-container">
+        <h2>Savatdagi mahsulotlar</h2>
+
+        <div id="cart-items"></div>
+
+        <div class="total-box">
+            Jami: <span id="total">0 so‘m</span>
+        </div>
+
+        <button class="order-btn">Buyurtma berish</button>
+    </div>
+
+    <script src="static/script.js"></script>
+    <script>
+        loadCart(); // sahifa ochilganda savatni yuklaydi
+    </script>
+
+</body>
+</html>
